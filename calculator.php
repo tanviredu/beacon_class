@@ -58,21 +58,59 @@
 <?php 
 	
 
-	//getting the value
+	// //getting the value
 
-	// this is how validation work
+	// // this is how validation work
+	// // !empty() is used for checking if there is other value in it
+
+	// if(filter_var($_POST['fnum'],FILTER_VALIDATE_INT) && filter_var($_POST['snum'],FILTER_VALIDATE_INT)){
 	
+	// 	$value1 = $_POST['fnum'];
+	// 	$value2 = $_POST['snum'];
+	// 	$value3 = $_POST['operator'];
 
-	if(filter_var(!empty($_POST['fnum']),FILTER_VALIDATE_INT) && filter_var(!empty($_POST['snum']),FILTER_VALIDATE_INT)){
-	
-		$value1 = $_POST['fnum'];
-		$value2 = $_POST['snum'];
-		$value3 = $_POST['operator'];
-
-		if($value3=='+'){
-			echo $value1+$value2;
-		}
-	}else{
-		echo "enter integer value";
-	}
+	// 	if($value3=='+'){
+	// 		echo $value1+$value2;
+	// 	}
+	// }else{
+	// 	echo "enter integer value";
+//	}
 ?>
+
+<?php 
+	 $number1 = $_POST['value1'];
+	 $number2 = $_POST['value2'];
+	 $number3 = $_POST['value3'];
+
+	 if(!filter_var($number1,FILTER_VALIDATE_INT) && !filter_var($number2,FILTER_VALIDATE_INT)){
+
+	 	echo "not integet";
+
+	 }
+
+
+	 // in array function hw
+	 // array function
+	 // all the function 
+	 // scientific calculator
+	 // user input validate
+	 // test all the value
+	 // form validation
+	 // registration
+	 //login
+	 //filter var
+	 // !empty();
+	 //in_array();
+
+
+	 
+
+
+
+?>
+
+
+
+
+
+
