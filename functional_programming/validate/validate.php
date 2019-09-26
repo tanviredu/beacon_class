@@ -176,6 +176,11 @@
         }
 
         //var_dump(string_min_max('tanvir',6,5));
-
+    function validate_mobile($mobile)
+        {
+            return preg_match('/^[0-9]{11}+$/', $mobile);
+        }
+        
+        //var_dump(validate_mobile("01554313265"));
 
 ?>
