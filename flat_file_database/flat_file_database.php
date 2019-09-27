@@ -123,4 +123,17 @@
 
     
     }
+
+    $product = new DBJSON('test.json');
+    $product->loadRecords();
+    var_dump($product->getRecords());
+    $record = array('mango','small','yellow');
+    $product->addRecords($record);
+    
+    // save record have to added after all the addition 
+    // beacuse it will replace the whole file
+    
+    $product->saveRecords();
+
 ?>
+
