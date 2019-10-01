@@ -5,6 +5,7 @@
         function __construct($number1,$number2){
             $this->number1 = $number1;
             $this->number2 = $number2;
+            //$this->number3 = $number3;
         }
 
         public function add(){
@@ -19,7 +20,7 @@
         public function devide(){
             return $this->number1/$this->number2;
         }
-        public function sinf($number){
+        public function sinf($number=1.2){
             return sin($number);
 
         }
@@ -47,7 +48,7 @@
     echo "</br>";
     echo $cal->devide();
     echo "</br>";
-    echo $cal->sinf(2.2);
+    echo $cal->sinf();
     echo "</br>";
     echo $cal->cosf(1.2);
     echo "</br>";
