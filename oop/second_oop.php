@@ -2,16 +2,28 @@
     // second class in oop
     class Student{
 
-        //public $id;
-        //public $name;
+        //protected $id;
+        public $student;
+        public $name;
 
-        public function __construct($id,$name){
+        public function __construct($id){
             $this->id = $id;
-            $this->name = $name;
         }
+
+
+        // accessor
+        //public
+        // protected
+        // private
     }
 
-    $student = new Student('143000410','tanvir');
-    var_dump($student);
+     $student = new Student('143000410');
+    // $student->id=2;  // this will show an ERROR !!!  
+     var_dump($student);
 
+    class EEEstudent extends Student{
+
+    }
+    $eeestudent = new EEEstudent('1234');\
+    var_dump($eeestudent);
 ?>
