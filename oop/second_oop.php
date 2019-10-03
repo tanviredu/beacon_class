@@ -31,9 +31,12 @@
         // for parent class constructor
         // so if you use the constructor here the parent constructor will no longer asked
         // this is called method overwritng
-        
-        public function __construct(){
+        // if you want to to use the parent constructor you have to use the
+        // parent keyword inside your child constructor
+        // first constructor will take the value id and assign it to the parent constructor
+        public function __construct($id){
             $this->dept ="EEE";
+            parent::__construct($id);
         }
 
     }
