@@ -34,13 +34,14 @@
         // if you want to to use the parent constructor you have to use the
         // parent keyword inside your child constructor
         // first constructor will take the value id and assign it to the parent constructor
-        public function __construct($id){
-            $this->dept ="EEE";
+        public function __construct($id,$dept){
+            //$this->dept ="EEE";
+            $this->dept = $dept;
             parent::__construct($id);
         }
 
     }
-    $eeestudent = new EEEstudent('1234');
+    $eeestudent = new EEEstudent('1234','EEE');
     $eeestudent->dept = "EEE";
 
     
