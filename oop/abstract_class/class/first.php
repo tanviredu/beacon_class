@@ -3,6 +3,7 @@
 
     interface Student{
         public function dept();
+        public function teachers();
     }
 
     class EEEstudent implements Student{
