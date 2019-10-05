@@ -35,4 +35,8 @@
     // if you use the private class you cant do anyhting with the
     // other class not even inheritance 
 
+    //  study for  adapter pattern\
+    // and dependency injection
 ?>
+
+
