@@ -56,4 +56,9 @@ $circle->getArea();
 $rect = new RECT(10,10);
 $rect->getArea();
 
+
+// you cant make the objeect of the parent abstract class
+// this will show an error
+
+
 ?>
