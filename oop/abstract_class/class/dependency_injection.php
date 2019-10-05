@@ -58,7 +58,7 @@ class SSLcommerce{
         protected $paymentProvider;
             // (6) we say that inthe constructor that 
             // payment provider will be one of the interface like bkash object or DBBL
-            
+            // er mane jei class paymentprovider implement korse setai bosate hobe
          public function __construct(Paymentprovider $paymentProvider){
         
              $this->paymentProvider = $paymentProvider;
