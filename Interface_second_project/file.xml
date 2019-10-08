@@ -1,0 +1,31 @@
+<items>
+    <item>
+        <name>apple</name>
+        <shop>tanvirshop</shop>
+        <year>2018</year>
+        <count>200</count>
+
+    </item>
+        <name>banana</name>
+        <shop>tanvirshop</shop>
+        <year>2019</year>
+        <count>200</count>
+
+    <item>
+        <name>pie</name>
+        <shop>tanvirshop</shop>
+        <year>2020</year>
+        <count>200</count>
+    </item>
+
+    <item>
+        <name>grape</name>
+        <shop>tanvirshop</shop>
+        <year>2021</year>
+        <count>200</count>
+    
+    </item>
+
+
+
+</items>
