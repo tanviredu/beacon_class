@@ -1,6 +1,4 @@
-<?php 
-
-
+<?php
 // interface programming
 interface DATABASEHANDLER {
     public function connect($host,$user,$password,$database);
@@ -97,8 +95,10 @@ class mysql implements DATABASEHANDLER{
     }
 
 }
-$ps = new OPERATION(new POSTGRESQL);
+//$ps = new OPERATION(new POSTGRESQL);
 //$conn1 = $ps->connect('localhost','postgres','1122','CRUD');
+#-------------------------------------------------------------
+
 
 //$result1 = $ps->query($conn1,"SELECT * FROM patient");
 //var_dump($result1);
@@ -106,14 +106,20 @@ $ps = new OPERATION(new POSTGRESQL);
 //$row1 = $ps->fetch_assoc($result1);
 //$row1 = pg_fetch_all($result1);
 //var_dump($row1);
+#--------------------------------------------------------------
 
-$my = new OPERATION(new mysql);
-$conn2 = $my->connect('localhost','root','1122','medical_admin2');
-$result2 = $my->query($conn2,"SELECT * FROM user");
+//$my = new OPERATION(new mysql);
+//$conn2 = $my->connect('localhost','root','1122','medical_admin2');
+#----------------------------------------------------------------
+
+
+//$result2 = $my->query($conn2,"SELECT * FROM user");
 //$row2 = $my->fetch_row($result2);
 //$row2 = $my->fetch_assoc($result2);
 //$row2 = mysqli_fetch_all($result2);
-$row2 = $my->fetch_all($result2);
-var_dump($row2);
+//$row2 = $my->fetch_all($result2);
+//var_dump($row2);
+#------------------------------------------------------------------
+
 ?>
 
