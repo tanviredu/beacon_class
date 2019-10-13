@@ -1,6 +1,7 @@
 <?php
 require_once('config.php');
 interface db_adapter{
+
     public function open_connection($server,$user,$pass,$name);
     public function close_connection($connection);
     public function confirm_query($result);
@@ -57,6 +58,6 @@ class Mysql implements db_adapter{
     }
 }
 $database = new Database(new Mysql);
-$connection =$database->open_connection('localhost','root','1122','beacon_project_file_upload')
-var_dump($connection);;
+$connection = $database->open_connection('localhost','root','','beacon_project_file_upload');
+
 ?>
