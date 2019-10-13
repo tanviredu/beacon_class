@@ -94,6 +94,4 @@ $op = new CRUDOperation(new Local);
 //$op->delete('file.txt');
 	
 
-// 956255810723-rjrhloukvhs81312l33o9ue92lmobrd4.apps.googleusercontent.com
-// -ZJBZlPKLnx7roYZYtKX_pDN
 ?>
