@@ -4,7 +4,7 @@ require_once('database.php');
 
 abstract class User{
     public function create_user(){}
-    public function get_all_user(){}
+
 
 }
 
@@ -30,7 +30,6 @@ class student extends User{
         $sql = "INSERT INTO {$this->table_name} (name,mobile,uid,image_name) VALUES ('$this->name','$this->mobile',{$this->uid},'$this->image_name')";
         echo $sql;
         $result = $database->query($connection,$sql);
-        var_dump($result);
         if($result){
             return true;
 
@@ -54,10 +53,11 @@ class student extends User{
             return false;
         }
     }
-    public function get_all_user(){
+    public static function get_all_user(){
         global $database;
         global $connection;
-        $sql = "SELECT * FROM {$this->table_name}";
+
+        $sql = "SELECT * FROM Student";
 
         $result = $database->query($connection,$sql);
         return $result;
@@ -66,7 +66,9 @@ class student extends User{
 
 }
 
-$student = new student('Tanvir','01554313265',100,'my_image');
+//$student = new student('Tanvir','01554313265',100,'my_image');
 #$student->create_user();
 #Student::remove_user(100);
 #$student->get_all_user();
+
+?>
